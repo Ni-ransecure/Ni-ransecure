@@ -5,13 +5,13 @@ pipeline{
 
         parameters([
             string (defaultValue:"niranjan",name:'name'),
-            string(college:'college')
+            string(college:'college')]
         ]
         )
 
     stages{
         stage("init"){
-            echo "init running"
+            echo 'init running'
             echo "Hii ${params.name}"
         }
         stage("build"){
