@@ -11,11 +11,19 @@ pipeline{
 
     stages{
         stage("init"){
+
+        
+        steps{
             echo 'init running'
             echo "Hii ${params.name}"
         }
+        }
         stage("build"){
+            steps{
+
+            
             echo "build complete"
+        } 
         }
     }
 }
